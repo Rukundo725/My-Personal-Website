@@ -6,14 +6,13 @@ articleForm.addEventListener('submit', (e) => {
     e.preventDefault();
     db.collection('articles').add({
         title: articleForm.title.value,
-        brief: articleForm.brief.value,
         article: articleForm.article.value,
         date: articleForm.date.value
         
     });
     articleForm.title.value = '';
-    articleForm.brief.value = '';
     articleForm.article.value = '';
     articleForm.date.value = '';
     alert("The article was created");
+    location.href = "dashboard.html";
 });

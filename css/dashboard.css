@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 :root {
-  --primary-color: #FFFFFF;
-  --secondary-color:#59CEA7;
-  --third-color:rgba(5, 21, 49, 0.94);
+  --primary-color: #ffffff;
+  --secondary-color: #59cea7;
+  --third-color: rgba(5, 21, 49, 0.94);
 }
 
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 
 main {
@@ -132,10 +132,6 @@ main .right-side .upper-content form input {
   padding: 5px 10px;
 }
 
-main .right-side .upper-content form button {
-  border: none;
-}
-
 main .right-side .upper-content .add-article {
   margin-right: 10px;
 }
@@ -168,15 +164,6 @@ main .right-side .lower-content .container article #article-img {
   border-radius: 50%;
   margin-right: 10px;
   margin-top: 30px;
-}
-
-main .right-side .lower-content .container article .article-content span a {
-  color: var(--secondary-color);
-  text-decoration: none;
-}
-
-main .right-side .lower-content .container article .article-content span a:hover {
-  color: var(--third-color);
 }
 
 main .right-side .lower-content .container article .date-comment {
@@ -219,5 +206,11 @@ main .right-side .lower-content .container .edit-delete #edit:hover {
 
 main .right-side .lower-content .container .edit-delete #delete:hover {
   color: red;
+}
+
+main .right-side .lower-content .container .edit-delete button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 /*# sourceMappingURL=dashboard.css.map */

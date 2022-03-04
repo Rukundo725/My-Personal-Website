@@ -103,8 +103,8 @@ const renderArticle = function(doc){
     p.textContent = doc.data().article.substring(0,140);
     readMore.addEventListener('click', (e) => {
       e.preventDefault();
-      location.href = "blog.html#"+doc.id;
-  })
+      location.href = "../blog.html#"+doc.id;
+    })
  
 
     articleImg.appendChild(img);
