@@ -89,6 +89,10 @@ main .left-side .lower-content #log-out h3:hover {
   color: var(--primary-color);
 }
 
+main .left-side .lower-content button {
+  border: #59CEA7;
+}
+
 main .right-side {
   background-color: var(--primary-color);
   text-align: center;

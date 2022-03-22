@@ -1,9 +1,7 @@
-const updatePost = document.getElementById('edit');
+const updatePost = document.querySelector('.upload-article');
 const title = document.getElementById('title');
 const article = document.getElementById('article');
 const date = document.getElementById('date');
-
-const id = location.hash.slice(1);
 
 db.collection('articles').doc(id).get().then(res => {
     title.value = res.data().title;
@@ -21,7 +19,7 @@ updatePost.addEventListener('click',(e)=>{
         title.value = "";
         article.value = "";
         alert("Post updated");
-        location.href = "blog.html";
+        location.href = "dashboard.html";
     }).catch(err=>{
         alert("Error: " + err.message)
     })

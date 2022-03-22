@@ -1,218 +1,207 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 :root {
-    --primary-color: #FFFFFF;
-    --secondary-color:#59CEA7;
-    --third-color:rgba(5, 21, 49, 0.94);
-    ;
+  --primary-color: #ffffff;
+  --secondary-color: #59cea7;
+  --third-color: rgba(5, 21, 49, 0.94);
+}
+body {
+  padding: 0;
+  margin: 0;
+  // background: var(--third-color);
+  font-family: "Poppins";
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  position: relative;
 
-}
-body{
-    padding: 0;
-    margin: 0;
-    // background: var(--third-color);
-    font-family: 'Poppins';
-    
-}
-main{
-   
+  .left-side {
+    color: var(--primary-color);
+    background: var(--third-color);
+    position: fixed;
+    width: 35.5%;
+    height: 650px;
+
+    .upper-content {
+      background: rgba(11, 5, 49, 0.25);
+      text-align: center;
+      height: 80px;
+      margin-top: -20px;
+
+      h1 {
+        padding-top: 15px;
+      }
+    }
+
+    .lower-content {
+      text-align: center;
+      margin: 20px;
+      display: grid;
+
+      .content {
+        display: flex;
+        margin-bottom: 20px;
+        margin-left: 80px;
+
+        &:active {
+          color: var(--secondary-color);
+        }
+
+        .iconify {
+          width: 45px;
+          height: 45px;
+          margin-right: 10px;
+        }
+
+        a {
+          margin-right: 10px;
+          color: var(--primary-color);
+          text-decoration: none;
+          &:hover {
+            color: var(--secondary-color);
+          }
+        }
+
+        p {
+          color: var(--secondary-color);
+        }
+      }
+
+      #log-out {
+        color: var(--secondary-color);
+        h3 {
+          cursor: pointer;
+          &:hover {
+            color: var(--primary-color);
+          }
+        }
+      }
+    }
+  }
+
+  .right-side {
+    background-color: var(--primary-color);
+    text-align: center;
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    position: relative;
 
-    .left-side{
+    width: 96%;
+    margin-left: 480px;
 
-        color: var(--primary-color);
-        background: var(--third-color);
-        position: fixed;
-        width: 35.5%;
-        height: 650px;
+    .upper-content {
+      display: flex;
+      justify-content: space-between;
+      background: rgb(240, 239, 239);
+      padding-bottom: 15px;
+      position: fixed;
+      width: 64.5%;
+      .iconify {
+        width: 40px;
+        height: 40px;
 
-        .upper-content{
-         background:rgba(11, 5, 49, 0.25);
-         text-align: center;
-         height: 80px;
-         margin-top: -20px;
-
-            h1{
-                padding-top: 15px;
-            }
-
+        &:hover {
+          color: var(--secondary-color);
+          cursor: pointer;
         }
+      }
 
-        .lower-content{
-            text-align: center;
-            margin: 20px;
+      form {
+        margin-top: 10px;
+        margin-left: 10px;
+        input {
+          height: 30px;
+          border-radius: 50px;
+          padding: 5px 10px;
+        }
+       
+      }
+
+      .add-article {
+        margin-right: 10px;
+
+        .iconify {
+          width: 50px;
+          height: 50px;
+          margin-top: 5px;
+        }
+      }
+    }
+
+    .lower-content {
+      margin-top: 70px;
+
+      .container {
             display: grid;
+            margin-left: 20px;
 
-            .content{
+                article {
                 display: flex;
-                margin-bottom: 20px;
-                margin-left: 80px;
 
-                &:active{
-                    color:var(--secondary-color)
-                }
-
-                .iconify{
-                    width: 45px;
-                    height: 45px;
+                #article-img {
+                    height: 173px;
+                    width: 173px;
+                    border-radius: 50%;
                     margin-right: 10px;
+                    margin-top: 30px;
                 }
 
-                a{
-                    margin-right: 10px;
-                    color: var(--primary-color);
-                    text-decoration: none;
-                    &:hover{
-                        color: var(--secondary-color);
-                    }
-                }
+                // .article-content {
+                //     // span {
+                //     // a {
+                //     //     color: var(--secondary-color);
+                //     //     text-decoration: none;
 
-                p{
+                //     //     &:hover {
+                //     //     color: var(--third-color);
+                //     //     }
+                //     // }
+                //     // }
+                // }
+
+                .date-comment {
+                    display: flex;
                     color: var(--secondary-color);
+                    justify-content: center;
                 }
-            }
 
-            #log-out{
-                color: var(--secondary-color);
-                h3{
-                    cursor: pointer;
-                    &:hover{
-                    color: var(--primary-color);
-                    }
+                .date {
+                    margin-right: 100px;
                 }
-            }
-        }
-       
-    }
 
-    .right-side{
-       background-color: var(--primary-color);
-       text-align: center;
-       display: grid;
-       
-       width: 96%;
-       margin-left: 480px;
-
-       .upper-content{
-            display: flex;
-            justify-content: space-between;
-            background: rgb(240, 239, 239);
-            padding-bottom: 15px;
-            position: fixed;
-            width: 64.5%;
-            .iconify{
-                width: 40px;
-                height: 40px;
-
-                &:hover{
-                    color: var(--secondary-color);
-                    cursor: pointer;
-                }
-            }
-
-            form{
-                margin-top: 10px;
-                margin-left: 10px;
-                input {
-                    height: 30px;
-                    border-radius: 50px;
-                    padding: 5px 10px;
-                }
-                button{
-                    border: none;
-                }
-            } 
-
-            .add-article{
-                margin-right: 10px;
-
-                .iconify{
-                    width: 50px;
-                    height: 50px;
-                    margin-top: 5px;
-                }
-            }
-        }
-
-        .lower-content{
-
-            margin-top: 70px;
-           
             
-            .container{
-                display: grid;
-                margin-left: 20px;
+            }
 
-                article{
+            .edit-delete {
+                display: flex;
+                justify-content: space-between;
 
-                    display: flex;
-    
-                    #article-img{
-                        height: 173px;
-                        width: 173px;
-                        border-radius: 50%;
-                        margin-right: 10px;
-                        margin-top: 30px;
-        
-                    }
-    
-                    .article-content{
-                        span{
-                            
-                            a{
-                                color: var(--secondary-color);
-                                text-decoration: none;
-    
-                                &:hover{
-                                    color: var(--third-color);
-                                }
-                            }
-                        }
-                    }
-    
-                    .date-comment{
-                        display: flex;
-                        color: var(--secondary-color);
-                        justify-content: center;
-                        
-    
-                    }
-    
-                    .date{
-                        margin-right: 100px;
-                    }
-    
+                .iconify {
+                    width: 35px;
+                    height: 35px;
+                    margin: 10px;
+                    cursor: pointer;
                 }
 
-                .edit-delete{
-                    display: flex;
-                    justify-content: space-between;
-                    // margin: 0 180px;
-
-                    .iconify{
-                        width: 35px;
-                        height: 35px;
-                        margin: 10px;
-                        cursor: pointer;
-
+                #edit {
+                    margin-left: 200px;
+                    &:hover {
+                    color: var(--secondary-color);
                     }
-
-                    #edit{
-                        margin-left: 200px;
-                        &:hover{
-                            color: var(--secondary-color);
-                        }
-                    }
-                    #delete{
-                        &:hover{
-                            color: red;
-                        }
-                    }
-
                 }
+                #delete {
+                    &:hover {
+                    color: red;
+                    }
+                }
+                button {
+                    background-color: transparent;
+                    border: none;
+                    cursor: pointer;
+
+                    
+                  }
             }
         }
     }
+  }
 }
