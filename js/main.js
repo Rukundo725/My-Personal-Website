@@ -93,7 +93,7 @@ const renderArticle = function(doc){
     var link = document.createTextNode("Read-more");
 
     
-    img.src ="../assets/article-img.jpeg"
+    img.src ="assets/article-img.jpeg"
     img.alt ="Article image"
     h2.textContent = doc.data().title;
     i1.innerHTML = "event"
